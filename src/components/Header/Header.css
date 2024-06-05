@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #feefad;
+  --secondary-color: #fdde55;
+  --text-color: #68d2e5;
+  --text-color-2: #03aed2;
+}
+.logo {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color-2);
+  padding: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-links {
+  font-size: 1.8rem;
+  font-weight: 600;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 3rem;
+}
+.navigation-links.a {
+  text-decoration: none;
+}
+.links:hover {
+  padding: 1rem;
+  background-color: var(--text-color-2);
+  color: var(--secondary-color);
+}
+.header-btn {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: crimson;
+  border-radius: 15px;
+  color: azure;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header-btn:hover {
+  background-color: var(--text-color-2);
+}
