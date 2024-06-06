@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #feefad;
+  --secondary-color: #fdde55;
+  --text-color: #38b0c5;
+  --text-color-2: #03aed2;
+}
+
+.hero-container {
+  border: 2px solid green;
+  height: 60vh;
+  display: grid;
+  background-image: url("../src/assets/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  place-content: center;
+}
+
+.hero-titles {
+  padding: 2rem;
+  place-content: center;
+}
+@media screen and (max-width: 25em) {
+  .hero-container {
+    width: auto;
+    height: 50vh;
+  }
+  .hero-titles {
+    position: inherit;
+    place-content: center;
+  }
+}
+@media screen and (max-width: 18.75em) {
+  .hero-container {
+    width: auto;
+    position: initial;
+  }
+}
+.hero-title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--text-color-2);
+  padding-bottom: 1.5rem;
+}
+.hero-subtitle {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--text-color-2);
+  font-style: italic;
+}
+.hero-btn {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  border-radius: 20px;
+  background-color: crimson;
+  border-color: #feefad;
+}
