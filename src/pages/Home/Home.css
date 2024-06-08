@@ -10,7 +10,8 @@ body {
 .hero-container {
   height: 60vh;
   display: grid;
-  background-image: url("../src/assets/hero-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url("../src/assets/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,4 +183,83 @@ body {
 .about-para {
   font-size: 2rem;
   padding: 2rem;
+}
+.destination-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background-color: #55fdb7;
+}
+.destination-container {
+  margin: 2rem auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width:62.5em) {
+  .destination-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  
+}
+@media screen and (max-width:25em) {
+  .destination-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:100%;
+  }
+}
+.dest-title{
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #fdde55;
+  color: #ffffff;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.destination-img {
+  display: block;
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+}
+.destination-wrapper p {
+  font-size: 1.5rem;
+}
+.description {
+  text-align: center;
+}
+.description-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+.price {
+  text-align: left;
+  color: white;
+  font-weight: 500;
+  background-color: rgba(253, 222, 85, 0.767);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.description-cta {
+  color: white;
+  font-weight: 700;
+  background-color: #fdde55ad;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
 }
