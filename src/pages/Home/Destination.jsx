@@ -6,7 +6,7 @@ const Rated = ({ img, title, description, price }) => {
   return (
     <div>
       <div className="destination-wrapper">
-        <div className="destination-img"> {img} </div>
+        <img src={img} alt="A photo of a park" className="destination-img" />
         <h2 className="description-title">{title}</h2>
         <p className="description">{description}</p>
         <div className="description-footer">

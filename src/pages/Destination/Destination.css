@@ -1,0 +1,83 @@
+.destination-contain {
+  padding: 3rem;
+  background-color: rgb(37, 209, 231);
+}
+.destination-header {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+.destination-para {
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.destination-wrap {
+  background-color: beige;
+  border-radius: 15px;
+  padding: 2rem;
+}
+.cards {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  gap: 1rem;
+  flex-direction: column;
+}
+.destination-more {
+  padding: 0.5rem;
+  font-weight: 500;
+  color: azure;
+  background-color: goldenrod;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: white;
+}
+.prices {
+  width: 50rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.prices-txt {
+  font-weight: 700;
+}
+.img {
+  width: 40rem;
+  height: 15rem;
+  /* background-image: url(../../assets/kenya.jpg); */
+  background-size: cover;
+}
+.dest-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-wrap {
+  margin: 1rem;
+  list-style-type: none;
+}
+
+.dest-list {
+  border-left: goldenrod solid 0.1rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0 0 1rem 3rem;
+  position: relative;
+}
+
+.list:last-of-type {
+  border-left: transparent solid 0.5rem;
+}
+
+.dest-list::before {
+  background-color: goldenrod;
+  border-radius: 100%;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+}
