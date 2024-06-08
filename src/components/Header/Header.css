@@ -4,6 +4,9 @@
   --text-color: #68d2e5;
   --text-color-2: #03aed2;
 }
+body {
+  width: 100%;
+}
 .logo {
   font-size: 2.5rem;
   letter-spacing: 0.3rem;

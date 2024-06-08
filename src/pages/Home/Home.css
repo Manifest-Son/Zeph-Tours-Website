@@ -6,6 +6,7 @@
 }
 body {
   background-color: #38b0c5;
+  width: 100%;
 }
 .hero-container {
   height: 60vh;
@@ -264,7 +265,7 @@ body {
   border-radius: 15px;
   cursor: pointer;
 }
-.testimonial-header{
+.testimonial-header {
   text-decoration: underline;
   text-align: center;
   color: #fdde55;
@@ -279,7 +280,7 @@ body {
   place-content: center;
 }
 .testimonial-wrapper {
-  height: 33vh;
+  height: auto;
   width: 20rem;
   border: 2px solid black;
   border-radius: 10px;
@@ -309,4 +310,21 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+.signup-input {
+  border-bottom: #fdde55;
+}
+.submit {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: #55fdb7;
+  border-color: none;
+  cursor: pointer;
 }

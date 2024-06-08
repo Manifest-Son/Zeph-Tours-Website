@@ -4,6 +4,7 @@ import About from "./About";
 import WhyUs from "./WhyUs";
 import Destination from "./Destination";
 import Testimonial from "./Testimonial";
+import Subscribe from "./Signup";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Destination />
       <Testimonial />
+      <Subscribe />
     </>
   );
 };

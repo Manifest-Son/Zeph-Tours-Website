@@ -1,0 +1,66 @@
+.footer {
+  background-image: url(../../assets/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: auto auto auto;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 62.5em) {
+  .footer-container {
+    position: relative;
+  }
+}
+@media screen and (max-width: 43.75em) {
+  .footer-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+}
+.footer-logo {
+  width: 7rem;
+  height: 5rem;
+  background-image: url("../../assets/git-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer-description {
+  font-size: 2rem;
+  font-style: italic;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer-sitemap {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-contact-us {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-end {
+  text-align: center;
+  font-style: italic;
+  background-color: #fdde55;
+}
+@media screen and (max-width: 25em) {
+  .footer-end {
+    position: relative;
+  }
+}
