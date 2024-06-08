@@ -189,6 +189,8 @@ body {
   flex-direction: column;
   padding: 1rem 1rem;
   background-color: #55fdb7;
+  padding-bottom: 0;
+  border-radius: 10px;
 }
 .destination-container {
   margin: 2rem auto;
@@ -197,26 +199,25 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-@media screen and (max-width:62.5em) {
-  .destination-container{
+@media screen and (max-width: 62.5em) {
+  .destination-container {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
   }
-  
 }
-@media screen and (max-width:25em) {
-  .destination-container{
-    display:flex;
+@media screen and (max-width: 25em) {
+  .destination-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width:100%;
+    width: 100%;
   }
 }
-.dest-title{
+.dest-title {
   padding: 1rem;
   font-size: 3rem;
   text-align: center;
@@ -262,4 +263,50 @@ body {
   padding: 1rem;
   border-radius: 15px;
   cursor: pointer;
+}
+.testimonial-header{
+  text-decoration: underline;
+  text-align: center;
+  color: #fdde55;
+  background-color: #38b0c5;
+  padding: 1rem;
+}
+.testimonial-container {
+  border: 2px soild green;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+}
+.testimonial-wrapper {
+  height: 33vh;
+  width: 20rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.rating {
+  padding: 0.5rem;
+  text-align: center;
+}
+.message {
+  border: 2px solid black;
+  text-align: center;
+  margin: 1rem;
+  background-color: green;
+  border-radius: 10px;
+}
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.person-img {
+  --size: 6rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(../../assets/andrew.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
 }
