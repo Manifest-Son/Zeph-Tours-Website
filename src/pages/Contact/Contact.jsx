@@ -83,7 +83,9 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="location"></div>
+      <div >
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127644.27838379539!2d36.78433052908718!3d-1.2401873034031623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f47a013536429%3A0x18243e7d1e89c538!2sAJ%20Kenya%20Safaris%20Ltd%20-%20Tours%20and%20Travel!5e0!3m2!1sen!2ske!4v1717940354950!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" className="location"></iframe> */}
+      </div>
     </section>
   );
 };

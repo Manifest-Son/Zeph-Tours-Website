@@ -134,7 +134,7 @@ body {
   padding-top: 0;
 }
 .about-container h1 {
-  color: rgba(255, 255, 0, 0.788);
+  color: var(--secondary-color);
   padding-bottom: 1rem;
   text-align: center;
   text-decoration: underline;
@@ -168,7 +168,7 @@ body {
   border-radius: 15px;
 }
 .about-text {
-  color: rgba(255, 255, 0, 0.836);
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 3rem;
 }
@@ -178,19 +178,27 @@ body {
 .about-subtitle {
   font-style: italic;
   font-weight: 400;
-  /* padding: 2rem; */
+  text-align: center;
   padding-bottom: 1rem;
 }
 .about-para {
   font-size: 2rem;
   padding: 2rem;
 }
+.about-btn{
+  padding:1rem;
+  background-color: crimson;
+  color: white;
+  font-weight: 700;
+  border-radius: 15px;
+
+}
 .destination-wrapper {
   display: flex;
   flex-direction: column;
   padding: 1rem 1rem;
-  background-color: #55fdb7;
-  padding-bottom: 0;
+  background-color: var(--secondary-color);
+  padding-bottom: 1rem;
   border-radius: 10px;
 }
 .destination-container {
@@ -251,35 +259,37 @@ body {
 }
 .price {
   text-align: left;
-  color: white;
+  font-weight: 700;
+  color: black;
   font-weight: 500;
-  background-color: rgba(253, 222, 85, 0.767);
   border-radius: 10px;
   padding: 0.5rem;
 }
 .description-cta {
   color: white;
   font-weight: 700;
-  background-color: #fdde55ad;
   padding: 1rem;
   border-radius: 15px;
+  background-color: crimson;
   cursor: pointer;
 }
-.testimonial-header {
+.testimonial-header{
   text-decoration: underline;
   text-align: center;
-  color: #fdde55;
+  color: white;
+  font-style: italic;
   background-color: #38b0c5;
   padding: 1rem;
+  background-color: var(--secondary-color);
 }
 .testimonial-container {
-  border: 2px soild green;
   padding: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .testimonial-wrapper {
+  background-color: #fdde55;
   height: auto;
   width: 20rem;
   border: 2px solid black;
@@ -293,7 +303,7 @@ body {
   border: 2px solid black;
   text-align: center;
   margin: 1rem;
-  background-color: green;
+  background-color:#e4d387ea;
   border-radius: 10px;
 }
 .person {
@@ -311,20 +321,47 @@ body {
   background-size: cover;
   border-radius: 50%;
 }
-
+legend{
+  font-size: 2rem;
+  color: var(--secondary-color-)
+}
 .signup {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+.signup-title{
+  text-align: center;
+  background-color: #fdde55;
+  color: #ffffff;
+}
+.label-txt{
+  font-weight: 500;
+  color: white;
+  font-size: 1.5rem;
 }
 .signup-input {
-  border-bottom: #fdde55;
+  margin-bottom: 5vh;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  caret-color: white;
+}
+.signup-input ::placeholder{
+  color:#fdde55;
+  font-size: 1.5rem;
 }
 .submit {
   font-size: 1.5rem;
   padding: 0.5rem;
-  background-color: #55fdb7;
+  background-color: crimson;
+  border-radius: 15px;
   border-color: none;
   cursor: pointer;
 }
