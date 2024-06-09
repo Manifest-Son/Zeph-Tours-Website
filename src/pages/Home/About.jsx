@@ -14,7 +14,7 @@ const About = () => {
           ></iframe>
         </div>
         <div className="about-text">
-          <h1 className="about-title">Zeph Tours,</h1>
+          <h1 className="about-title">Zaph Tours,</h1>
           <h3 className="about-subtitle">Best Safaris and Adventures.</h3>
           <p className="about-para">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,

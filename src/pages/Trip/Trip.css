@@ -11,6 +11,7 @@
   text-align: center;
 }
 .trip-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +27,19 @@
 }
 .trip-wrapper {
   width: 30rem;
-  height: 25vh;
+  height: auto;
+  max-height: 30vh;
   border: 2px solid black;
   margin: 1.5rem;
   border-radius: 15px;
   overflow: hidden;
-  /* padding: 1rem; */
+  padding: 1rem;
+}
+@media screen and (max-width: 56.25em) {
+  .trip-wrapper {
+    height: 20vh;
+    position: relative;
+  }
 }
 .trip-img {
   display: block;
