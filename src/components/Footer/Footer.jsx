@@ -1,4 +1,12 @@
 import "./Footer.css";
+import { FaFacebook } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,30 +21,44 @@ const Footer = () => {
           </p>
           <div className="footer-socials">
             <a href="facebook.com/Zaph Travels" className="social-links">
-              Facebook
+              <FaFacebook />
             </a>
             <a href="twitter.com/Zaph Travels" className="social-links">
-              Twitter
+              <FaXTwitter />
             </a>
             <a href="linkedIn.com/Zaph Travels" className="social-links">
-              LinkedIn
+              <FaLinkedin />
             </a>
             <a href="instagram.com/Zaph Travels" className="social-links">
-              Instagram
+              <FaSquareInstagram />
             </a>
           </div>
         </div>
         <div className="footer-sitemap">
           <h2>Quick Links</h2>
-          <a href="">Home</a>
-          <a href="">Destination</a>
-          <a href="">Trip</a>
-          <a href="">Contact Us</a>
+          <a className="footer-links">
+            <Link to="/">Home</Link>
+          </a>
+          <a className="footer-links">
+            <Link to="/destination">Destination</Link>
+          </a>
+          <a className="footer-links">
+            <Link to="/trips">Trip</Link>
+          </a>
+          <a className="footer-links">
+            <Link to="/contact">Contact Us</Link>
+          </a>
         </div>
         <div className="footer-contact-us">
-          <p>Head offices</p>
-          <p>email address</p>
-          <p>Phone Number</p>
+          <p>
+            <FaLocationDot /> Head offices: <br /> Harambee House, Muranga.
+          </p>
+          <p>
+            <FaRegEnvelope /> Email address: <br /> info@zaphtours.co.ke
+          </p>
+          <p>
+            <FiPhoneCall /> Phone Number: <br /> +254756389320{" "}
+          </p>
         </div>
       </div>
       <div className="footer-end">

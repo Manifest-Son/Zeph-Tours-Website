@@ -6,21 +6,27 @@ const Subscribe = () => {
         <form action="">
           <fieldset className="signup">
             <legend>Subscribe</legend>
-            <label htmlFor="fName">First Name:</label>
+            <label htmlFor="fName" className="label-txt">
+              First Name:{" "}
+            </label>
             <input
               type="text"
               name="firstName"
               className="signup-input"
               placeholder="John"
             />
-            <label htmlFor="lName">Last Name:</label>
+            <label htmlFor="lName" className="label-txt">
+              Last Name:{" "}
+            </label>
             <input
               type="text"
               name="lastName"
               className="signup-input"
               placeholder="Doe"
             />
-            <label htmlFor="email">E-mail Address</label>
+            <label htmlFor="email" className="label-txt">
+              E-mail Address
+            </label>
             <input
               type="email"
               name="email"

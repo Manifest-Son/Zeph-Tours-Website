@@ -1,7 +1,16 @@
+:root {
+  --primary-color: #feefad;
+  --secondary-color: #fdde55;
+  --text-color: #38b0c5;
+  --text-color-2: #03aed2;
+}
 .footer {
-  background-image: url(../../assets/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../assets/hero-bg.jpg);
   background-position: center;
   background-size: cover;
+  color: var(--text-color-2);
+  padding-right: 4rem;
 }
 .footer-container {
   display: flex;
@@ -38,7 +47,8 @@
 .footer-socials {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 .footer-sitemap {
   display: flex;
@@ -46,6 +56,12 @@
   align-items: baseline;
   flex-direction: column;
   gap: 1rem;
+  color: #ffffff;
+}
+.footer-links {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
 }
 .footer-contact-us {
   display: flex;
@@ -53,6 +69,11 @@
   align-items: baseline;
   flex-direction: column;
   gap: 1rem;
+}
+.footer-contact-us svg {
+  width: 2rem;
+  height: 2rem;
+  color: aliceblue;
 }
 .footer-end {
   text-align: center;

@@ -22,6 +22,7 @@ const About = () => {
             perspiciatis cupiditate qui, aliquam repudiandae minus dolore
             molestias laudantium!
           </p>
+          <button className="about-btn">Learn More</button>
         </div>
       </div>
     </div>

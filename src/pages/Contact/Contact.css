@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #feefad;
+  --secondary-color: #fdde55;
+  --text-color: #38b0c5;
+  --text-color-2: #03aed2;
+}
 .contact-header {
   text-align: center;
   font-size: 3rem;
@@ -5,43 +11,70 @@
 }
 .contact-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: auto;
+  padding-bottom: 1rem;
   /* padding: 4rem; */
-  background-color: aqua;
 }
 .contact-socials {
+  text-align: center;
   padding: 2rem;
-  background-color: blueviolet;
 }
 .contact-socials h2 {
   text-align: center;
 }
-.socials a {
+.contact-links svg {
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
-  fill: green;
+  /* border-radius: 50%; */
 }
-.icons {
-  --size: 5rem;
-  width: var(--size);
-  height: var(--size);
+svg {
+  fill: #ffff;
 }
-.icons svg {
-  --size: 3rem;
-  width: var(--size);
-  height: var(--size);
-  fill: orange;
+.socials {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+}
+.social-txt {
+  text-align: center;
+}
+.contact-addins {
+  color: var(--secondary-color);
 }
 .contact-form {
-  display: grid;
-  padding: 3rem;
+  color: #feefad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  background-color: brown;
+  height: auto;
+  width: 50rem;
 }
 .location {
   width: 100%;
   height: 50vh;
   border: 2px soild green;
+}
+.contact-input {
+  margin-bottom: 5vh;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  caret-color: white;
+}
+label {
+  font-size: 2rem;
+}
+.submit {
+  background-color: crimson;
+  border-radius: 15px;
+  color: #ffff;
+  font-weight: 700;
 }

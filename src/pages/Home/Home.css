@@ -185,13 +185,12 @@ body {
   font-size: 2rem;
   padding: 2rem;
 }
-.about-btn{
-  padding:1rem;
+.about-btn {
+  padding: 1rem;
   background-color: crimson;
   color: white;
   font-weight: 700;
   border-radius: 15px;
-
 }
 .destination-wrapper {
   display: flex;
@@ -273,7 +272,7 @@ body {
   background-color: crimson;
   cursor: pointer;
 }
-.testimonial-header{
+.testimonial-header {
   text-decoration: underline;
   text-align: center;
   color: white;
@@ -303,7 +302,7 @@ body {
   border: 2px solid black;
   text-align: center;
   margin: 1rem;
-  background-color:#e4d387ea;
+  background-color: #e4d387ea;
   border-radius: 10px;
 }
 .person {
@@ -321,9 +320,9 @@ body {
   background-size: cover;
   border-radius: 50%;
 }
-legend{
+legend {
   font-size: 2rem;
-  color: var(--secondary-color-)
+  color: var(--secondary-color-);
 }
 .signup {
   display: flex;
@@ -333,12 +332,12 @@ legend{
   padding: 2rem;
   gap: 2rem;
 }
-.signup-title{
+.signup-title {
   text-align: center;
   background-color: #fdde55;
   color: #ffffff;
 }
-.label-txt{
+.label-txt {
   font-weight: 500;
   color: white;
   font-size: 1.5rem;
@@ -353,8 +352,8 @@ legend{
   color: white;
   caret-color: white;
 }
-.signup-input ::placeholder{
-  color:#fdde55;
+.signup-input ::placeholder {
+  color: #fdde55;
   font-size: 1.5rem;
 }
 .submit {
